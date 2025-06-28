@@ -1,0 +1,1 @@
+This repository contains my personal solutions to various LeetCode problems, written in C++ . Each solution includes clean, well-commented code and often includes explanations, edge case handling, and optimal approaches. It's part of my journey to improve data structures, algorithms, and problem-solving skills.
