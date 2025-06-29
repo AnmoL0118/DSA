@@ -10,21 +10,16 @@ public:
         void moveZeroes(vector<int> &nums)
         {
 
-                int lastNonZeroIndex = 0; // Pointer for the position of the last non-zero element
+                int nonZero = 0;
 
-                // Move all non-zero elements to the front
-                for (int i = 0; i < nums.size(); ++i)
+                for (int j = 0; j < nums.size(); j++)
                 {
-                        if (nums[i] != 0)
+
+                        if (nums[j] != 0)
                         {
-                                nums[lastNonZeroIndex++] = nums[i];
+                                swap(nums[j], nums[nonZero]);
+                                nonZero++;
                         }
-                }
-
-                // Fill the remaining positions with zeros
-                for (int i = lastNonZeroIndex; i < nums.size(); ++i)
-                {
-                        nums[i] = 0;
                 }
         }
 };
