@@ -10,6 +10,12 @@ public:
         int majorityElement(vector<int> &nums)
         {
 
+                // This algorithm works in O(n) time and O(1) space complexity.
+                // It finds the majority element in an array, which is defined as the element that appears more than n/2 times.
+                // The algorithm maintains a count of the current candidate for majority element and adjusts it based on the elements in the array.
+                // If the count reaches zero, it switches to a new candidate.
+                // This approach is efficient and works well for the problem of finding the majority element.
+                // Boyer-Moore Voting Algorithm
                 int freq = 0;
                 int ans = 0;
 
